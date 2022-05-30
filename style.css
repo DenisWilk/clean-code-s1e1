@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Lato;
+    font-family:Lato;
     src: url('./assets/fonts/Lato-Regular.ttf');
 }
 
@@ -27,7 +27,7 @@ body {
 .centered-main-page-element {
     display: block;
     width: 500px;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 
 .task {
@@ -42,7 +42,7 @@ body {
 
 ul {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 li,
@@ -57,7 +57,7 @@ button {
 
 button {
     background: none;
-    border: 0px;
+    border: 0;
     color: #888;
     font-size: 15px;
     width: 60px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-    color: #3a3A3a;
+    color: #3a3a3a;
 }
 
 /* Heading */
@@ -87,8 +87,8 @@ input[type="text"] {
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #dDd;
-    background: #FFF;
+    border: 1px solid #ddd;
+    background: #fff;
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
