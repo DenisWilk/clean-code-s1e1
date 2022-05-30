@@ -71,7 +71,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for='new-task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -81,7 +81,7 @@ label[for="new-task"] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.ed {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -94,12 +94,12 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.ed:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for='new-task'] {
     display: block;
     margin: 0 0 20px;
 }
@@ -122,7 +122,7 @@ li>* {
     vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.checkbox {
     margin: 0 10px;
 }
 
@@ -133,7 +133,7 @@ li>label {
     width: 226px;
 }
 
-li>input[type="text"] {
+li>.ed {
     width: 226px
 }
 
@@ -154,11 +154,11 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+ul li .ed {
     display: none
 }
 
-ul li.editMode input[type="text"] {
+ul li.editMode .ed {
     display: inline-block;
     width: 224px
 }
@@ -167,7 +167,7 @@ ul li.editMode label {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
     .aaa {
         text-align: center;
