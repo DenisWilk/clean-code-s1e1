@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Lato;
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+.body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+}
+
+.header__img {
+    width: 100%;
+}
+
+.header__link {
+    font-family: fantasy, cursive;
+}
+
+.main {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main__title {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.main__new-task {
+    display: flex;
+    margin-top: 20px;
+}
+
+.new-task__text {
+    width: 318px;
+    height: 21px;
+    font-size: 18px;
+}
+
+.task__text {
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    outline: none;
+}
+
+.task__text_edit {
+    display: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 9px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+
+.task__text_edit:focus {
+    color: #333;
+}
+
+.task__btn {
+    background: none;
+    border: 0;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.task__btn:hover {
+    color: #3a3a3a;
+}
+
+.main__list {
+    margin: 0;
+    padding: 0;
+}
+
+.list__task {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task__checkbox {
+    margin: 0 10px;
+}
+
+.task__label {
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 347px;
+    list-style: none;
+}
+
+.delete-btn__img {
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+
+.delete-btn__img:hover {
+    transform: rotateZ(0);
+}
+
+.main__complete-list .task__label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.list__edit_mode
+.task__text {
+    display: inline-block;
+    width: 224px;
+}
+
+.list__edit_mode
+.task__label {
+    display: none;
+}
+
+@media (max-width:768px) {
+
+    .header {
+        text-align: center;
+    }
+}
