@@ -8,35 +8,39 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.header__img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.header__link {
     font-family: fantasy, cursive;
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto;
 }
 
-.task {
+.task__text {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
 }
 
-.task-row-wrapper {
+.main__new-task {
     display: flex;
+    margin-top: 20px;
 }
 
 ul {
@@ -69,8 +73,8 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+
+.main__title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -80,31 +84,27 @@ label[for='new-task'] {
     text-transform: uppercase;
 }
 
-.ed {
+
+.task__text_edit {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
-    height: 21px;
     padding: 0 9px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
 }
 
-.ed:focus {
+.task__text_edit:focus {
     color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
-    display: block;
-    margin: 0 0 20px;
-}
 
-input#new-task {
+
+.new-task__text {
     width: 318px;
+    height: 21px;
+    font-size: 18px;
 }
 
 /* Task list */
@@ -125,24 +125,24 @@ li>* {
     margin: 0 10px;
 }
 
-li>label {
+.task__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 226px;
+    width: 347px;
 }
 
-li>.ed {
-    width: 226px
+.task__text_edit {
+    width: 347px
 }
 
-button.delete img {
+.delete-btn__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.delete-btn__img:hover {
     transform: rotateZ(0);
 }
 
@@ -153,11 +153,11 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li .ed {
+.task__text_edit {
     display: none
 }
 
-ul li.edit-mode .ed {
+ul li.edit-mode .task__text_edit {
     display: inline-block;
     width: 224px
 }
